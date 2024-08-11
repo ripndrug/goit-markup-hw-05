@@ -710,9 +710,15 @@ p {
 
 .modal-input {
   border: 1px solid var(--navy-blue-modal);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  outline: transparent;
+
   border-radius: 4px;
   height: 40px;
   width: 100%;
+
+  background-color: transparent;
 
   padding-left: 38px;
 }
@@ -729,24 +735,34 @@ p {
   flex-wrap: nowrap;
 }
 
+.modal-container-margin {
+  margin-bottom: 16px;
+}
+
 .modal-input-wrap {
   position: relative;
 }
 
 .modal-icon {
   position: absolute;
-  top: 8px;
+  top: 50%;
   left: 16px;
-}
+  transform: translateY(-50%);
 
-.modal-textarea::placeholder {
-  font-size: 12px;
-  line-height: 117%;
-  letter-spacing: 0.04em;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
   padding: 8px 16px;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-container {
@@ -768,7 +784,7 @@ p {
 .modal-btn-submit {
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
 
   display: block;
@@ -784,6 +800,7 @@ p {
   color: var(--white);
 
   border: none;
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -806,18 +823,24 @@ p {
   align-items: center;
 
   margin-right: 8px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-terms-checkbox:checked + .modal-label > .modal-check {
-  border-radius: 2px;
   background-color: var(--ocean);
-  border: none;
 
   fill: var(--cloud);
 }
 
 .modal-input:focus-within + .modal-icon {
   fill: var(--iris);
+}
+
+.modal-textarea:focus-within {
+  border-color: var(--iris);
 }
 
 .modal-input:focus-within {
