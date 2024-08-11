@@ -466,13 +466,18 @@
         </div>
 
         <div class="footer-form-container">
-          <p class="footer-form-text">Subscribe</p>
+          <!-- <p class="footer-form-text">Subscribe</p> -->
           <form class="footer-form">
-            <input
-              type="email"
-              class="footer-email-input"
-              placeholder="E-mail"
-            />
+            <label class="footer-label"
+              >Subscribe
+
+              <input
+                name="footer-email"
+                type="email"
+                class="footer-email-input"
+                placeholder="E-mail"
+              />
+            </label>
             <button type="submit" class="footer-subscribe-btn">
               Subscribe
               <svg class="footer-subscribe-icon" height="20" width="24">
@@ -534,7 +539,6 @@
             <label class="modal-label" for="comment">Comment</label>
             <textarea
               class="modal-textarea"
-              type="text"
               name="comment"
               id="comment"
               placeholder="Text input"
