@@ -727,6 +727,8 @@ p {
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
   height: 120px;
+
+  color: var(--navy-blue-modal);
 }
 
 .modal-container {
@@ -735,7 +737,7 @@ p {
   flex-wrap: nowrap;
 }
 
-.modal-container-margin {
+.modal-container.modal-container-margin {
   margin-bottom: 16px;
 }
 
@@ -770,7 +772,6 @@ p {
 }
 
 .modal-checkbox-container {
-  margin-top: 16px;
   margin-bottom: 24px;
 }
 
@@ -831,6 +832,7 @@ p {
 
 .modal-terms-checkbox:checked + .modal-label > .modal-check {
   background-color: var(--ocean);
+  border: none;
 
   fill: var(--cloud);
 }
