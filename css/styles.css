@@ -517,6 +517,80 @@ p {
   margin-right: 120px;
 }
 
+.footer-social-container {
+  margin-right: 80px;
+}
+
+.footer-form-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--white);
+
+  margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-email-input {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+  color: currentColor;
+
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  padding: 8px 16px;
+}
+
+.footer-email-input::placeholder {
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer-subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+
+  background-color: var(--iris);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+
+  border: none;
+  fill: var(--white);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: var(--ocean);
+}
+
 /* Modal */
 .modal-overlay {
   position: fixed;
@@ -686,19 +760,32 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-submit:hover {
+.modal-btn-submit:hover,
+.modal-btn-submit:focus {
   background-color: var(--ocean);
 }
 
 .modal-check {
   border-radius: 2px;
   border: 1px solid var(--navy-blue-modal);
+  width: 16px;
+  height: 16px;
+
+  fill: transparent;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 8px;
 }
 
 .modal-terms-checkbox:checked + .modal-label > .modal-check {
   border-radius: 2px;
   background-color: var(--ocean);
   border: none;
+
+  fill: var(--cloud);
 }
 
 .modal-input:focus-within + .modal-icon {
