@@ -690,7 +690,7 @@ p {
   background-color: var(--ocean);
 }
 
-.modal-terms-checkbox {
+.modal-check {
   border-radius: 2px;
   border: 1px solid var(--navy-blue-modal);
 }
@@ -699,8 +699,6 @@ p {
   border-radius: 2px;
   background-color: var(--ocean);
   border: none;
-
-  fill: var(--cloud);
 }
 
 .modal-input:focus-within + .modal-icon {
